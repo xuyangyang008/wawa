@@ -1,0 +1,151 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>长沙剑龙生物科技发展有限公司</title>
+		<meta name="Keywords" content="">
+		<meta name="Description" content="">
+		<link href="css/base.css" rel="stylesheet">
+		<!--[if lt IE 9]>
+<script src="Scripts/modernizr.js"></script>
+<![endif]-->
+	</head>
+
+	<body>
+		<div id="header">
+			<div id="menu">
+				<div id="divLeft" class="iDiv"></div>
+				<div id="divTime" class="iDiv">
+					<div>
+						<span id="spanTime"></span>
+					</div>
+					<script type="text/javascript">
+						window.onload = function() {
+							//定时器每秒调用一次fnDate()
+							setInterval(function() {fnDate();}, 1000);
+						}
+						//js 获取当前时间
+						function fnDate() {
+							var oDiv = document.getElementById("spanTime");
+							var date = new Date();
+							var year = date.getFullYear(); //当前年份
+							var month = date.getMonth(); //当前月份
+							var data = date.getDate(); //天
+							var hours = date.getHours(); //小时
+							var minute = date.getMinutes(); //分
+							var second = date.getSeconds(); //秒
+							var t="";
+							if(parseInt(hours)>=6&&parseInt(hours)<=12)
+							t="中午  ";
+							if(parseInt(hours)>12&&parseInt(hours)<=18)
+							t="下午  ";
+							if((parseInt(hours)>18&&parseInt(hours)<=24)||(parseInt(hours)>=0&&parseInt(hours)<6))
+							{
+								t="晚上  ";
+							}
+							var time = "时间："+year + "-" + fnW((month + 1)) + "-" + fnW(data) + " "+t+ fnW(hours) + ":" + fnW(minute) + ":" + fnW(second);
+							oDiv.innerHTML =time;
+						}
+						//补位 当某个字段不是两位数时补0
+						function fnW(str) {
+							var num;
+							str > 10 ? num = str : num = "0" + str;
+							return num;
+						}
+					</script>
+				</div>
+				<div id="divRight" class="iDiv">
+				</div>
+				<div class="iDiv" id="divMenu">
+					<a href='index.html'>网站首页</a>
+					<a href='articleList/15.html'>公司简介</a>
+					<a href='productList/11.html'>产品展示</a>
+					<a href='articleList/17.html'>养殖技术</a>
+					<a href='articleList/18.html'>娃娃鱼介绍</a>
+					<a href='productList/18.html'>企业资质</a>
+					<a href='productList/19.html'>友情链接</a>
+				</div>
+			</div>
+		</div>
+		<div class="navswf">
+			<object id="FlashID" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="1002" height="193">
+          <param name="movie" value="Scripts/flashbcastr.swf" />
+          <param name="quality" value="high" />
+          <param name="wmode" value="" />
+          <param name="swfversion" value="8.0.35.0" />
+          <param name="expressinstall" value="Scripts/expressInstall.swf" />
+          <param name="flashvars" value="bcastr_xml_url=Scripts/flashbcastr.xml" />
+          <param name="transparent" value="" />
+          <!--[if !IE]>-->
+          <object type="application/x-shockwave-flash" data="Scripts/flashbcastr.swf" width="1000" height="200">
+            <!--<![endif]-->
+            <param name="quality" value="high" />
+            <param name="wmode" value="" />
+            <param name="swfversion" value="8.0.35.0" />
+            <param name="expressinstall" value="Scripts/expressInstall.swf" />
+            <param name="flashvars" value="bcastr_xml_url=Scripts/flashbcastr.xml" />
+            <param name="transparent" value="transparent" />
+            <div>
+              <p><a href="http://www.adobe.com/go/getflashplayer"><img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Adobe Flash Player" /></a></p>
+            </div>
+            <!--[if !IE]>-->
+          </object>
+			<!--<![endif]-->
+			</object>
+
+		</div>
+		<article>
+			<aside class="navsidebar">
+				<div class="vcard">
+					<ul class="about">
+						<li>
+							<a href="#">成品大鲵</a>
+						</li>
+						<li>
+							<a href="#">鲵苗</a>
+						</li>
+						<li>
+							<a href="#">幼鲵</a>
+						</li>
+						<li>
+							<a href="#">种鲵</a>
+						</li>
+					</ul>
+				</div>
+				<div class="vcard2">
+					<div class="contact">
+						<p>地址：湖南省望城区茶亭镇洪开桥剑龙娃娃鱼养殖基地</p>
+						<p>电话：0731-88245889</p>
+						<p>手机：13907486476 (谭先生) 13808415437 (雷先生)</p>
+						<p>QQ：1605461952</p>
+						<p>邮编：410203</p>
+						<p>邮箱：jlwwyu@163.com</p>
+					</div>
+				</div>
+			</aside>
+			<div class="content">
+				<div class="list">
+					<!--article begin-->
+					
+					<!--article end-->
+				</div>
+			</div>
+		</article>
+		<div id="copright">
+			<div id="footer-nav">
+				<a href="#">公司掠影</a><span class="sep">|</span>
+				<a href="#">新闻中心</a><span class="sep">|</span>
+				<a href="#">版权声明</a><span class="sep">|</span>
+				<a href="#">在线留言</a><span class="sep">|</span>
+				<a href="#">技术支持</a><span class="sep">|</span>
+			</div>
+			<div id="footer-cop">
+				版权所有 Copyright &copy; 2012-2015 长沙剑龙生物科技发展有限公司 湘ICP备1200230
+			</div>
+		</div>
+		</script>
+	</body>
+
+</html>
+
